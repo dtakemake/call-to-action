@@ -1,0 +1,97 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/cta-plugin",
+	"version": "0.1.0",
+	"title": "Cta Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"border": {
+			"radius": true,
+			"color": true,
+			"style": true,
+			"width": false
+		},
+		"color": {
+			"background": false,
+			"gradients": false,
+			"heading": true,
+			"button": true,
+			"text": true,
+			"link": true
+		},
+		"align": [ "wide", "full" ],
+		"dimensions": {
+			"minHeight": true
+		},
+		"background": {
+			"backgroundImage": true,
+			"backgroundSize": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"shadow": true
+	},
+	"attributes": {
+		"mobile-headingShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"mobile-descriptionShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"mobile-buttonShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"mobile-backgroundColor": {
+			"type": "string",
+			"default": ""
+		},
+		"tablet-headingShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"tablet-descriptionShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"tablet-buttonShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"tablet-backgroundColor": {
+			"type": "string",
+			"default": ""
+		},
+		"desktop-headingShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"desktop-descriptionShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"desktop-buttonShow": {
+			"type": "boolean",
+			"default": true
+		},
+		"desktop-backgroundColor": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "cta-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

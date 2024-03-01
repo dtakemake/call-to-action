@@ -1,0 +1,42 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-cta-plugin {
+	
+	// only mobile
+	@media screen and (max-width: 575.99px) {
+		background-color: var(--cta--mobile--bgColor, inherit);
+	
+		&.mobile-heading-none .cta-plugin-heading,
+		&.mobile-description-none .cta-plugin-description,
+		&.mobile-button-none .cta-plugin-buttons { 
+			display: none;
+		}
+	}
+	
+	// only tablet
+	@media screen and (min-width: 576px) and (max-width: 991.99px) {
+		background-color: var(--cta--tablet--bgColor, inherit);
+
+		&.tablet-heading-none .cta-plugin-heading,
+		&.tablet-description-none .cta-plugin-description,
+		&.tablet-button-none .cta-plugin-buttons { 
+			display: none;
+		}
+	}
+	
+	// only desktop
+	@media screen and (min-width: 992px) {
+		background-color: var(--cta--desktop--bgColor, inherit);
+
+		&.desktop-heading-none .cta-plugin-heading,
+		&.desktop-description-none .cta-plugin-description,
+		&.desktop-button-none .cta-plugin-buttons { 
+			display: none;
+		}
+	}
+}
